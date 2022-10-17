@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial, verdana;
+	color: #fff;
+}
+
+body{
+	background: #000;
+}
+
+main{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	background: #fff;
+}
+
+header{
+	background: blue;
+	padding: 50px 20px;
+}
+
+nav{
+	padding: 25px 5px;
+	background: #ddd;
+}
+
+nav{
+	color: #000;
+	display: flex;
+	align-content: center;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul li{
+	float: left;
+}
+
+ul li a{
+	color: #000;
+	text-decoration: none;
+	padding: 10px 12px;
+}
+
+section{
+	display: flex;
+}
+
+#mainContent{
+	background: red;
+	padding: 10px;
+	width: 70%;
+}
+
+.home .product{
+	padding: 10px;
+	background: green;
+	margin-bottom: 10px;
+	display: flex;
+}
+
+.product a{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.product p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.img-div{
+	width: 30%;
+	margin-right: 10px;
+}
+
+.img-div > img{
+	width: 100%;
+}
+
+.content-div{
+	width: 70%;
+}
+
+aside{
+	background: green;
+	padding: 10px;
+	width: 30%;
+}
+
+.widget{
+	padding: 10px;
+	background: red;
+	margin-bottom: 10px;
+}
+
+footer{
+	padding: 50px 10px;
+	background: blue;
+}
