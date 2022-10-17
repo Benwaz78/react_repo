@@ -1,27 +1,32 @@
-import Post from "./Post";
 import { useState } from "react"; 
+import "./App.css"
 
 
 
 
 function App(){
-  const [users, SetUsers ] = useState(
-    [
-        {name:"Manu drew with Newcastle", content:"The content of Manu and Newcastle match"},
-        {name:"Chelsea defeats Aston Villa", content:"The content of Chelsea defeats Aston Villa"},
-        {name:"AS Roma Plays Sampdoria Today", content:"AS Roma match is today content Plays"},
-    ]
-);
+  const [count, setCount ] = useState(0);
+  const [isRed, setRed ] = useState(false);
+
+    const increment = ()=>{
+      setCount(count + 1);
+    }
+
+    const decrement = ()=>{
+      setCount(count - 1);
+    }
+
+    const changeColor = ()=>{
+      setRed(!isRed);
+    }
 
   return(
     <div className="container">
-        {
-          users.map(
-              user=>(
-                  <Post name={user.name} content={user.content} />
-              )
-          )
-        }
+        <button onClick={ decrement }>Decrement</button>
+        <button onClick={ increment }>Increment</button>
+        <button onClick={ changeColor }>Change Color</button><br />
+        <h2>{ count }</h2>
+        <h2 className={ isRed ? "red" : "" }>Some Text</h2>
     </div>
   )
 }
