@@ -2,12 +2,12 @@ import React from "react";
 import "./App.css";
 
 
-function Post(props){
+function Post({ name, content}){
     return(
         <div className="post">
-            <h1>{props.name}</h1>
+            <h1>{name}</h1>
             <p>
-                {props.content}
+                {content}
             </p>
         </div>
     )
