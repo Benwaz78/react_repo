@@ -1,16 +1,16 @@
 import Router from "react";
 
 
-function Post(){
+function Contact(){
 
     return(
         <div className="post">
-            <h1>Post Data 1</h1>
+            <h1>Contact Data 1</h1>
             <p>
-                Some content goes in here
+                Some contact data goes in here
             </p>
         </div>
     )
 }
 
-export default Post;
+export default Contact;

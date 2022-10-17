@@ -1,34 +1,29 @@
-import { useState } from "react"; 
-import "./App.css"
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+import Home from "./Home";
+import Post from "./Post";
+import Contact from "./Contact";
+import Nav from "./Nav";
+import "./App.css";
 
 
 function App(){
-  const [count, setCount ] = useState(0);
-  const [isRed, setRed ] = useState(false);
 
-    const increment = ()=>{
-      setCount(count + 1);
-    }
-
-    const decrement = ()=>{
-      setCount(count - 1);
-    }
-
-    const changeColor = ()=>{
-      setRed(!isRed);
-    }
-
-  return(
-    <div className="container">
-        <button onClick={ decrement }>Decrement</button>
-        <button onClick={ increment }>Increment</button>
-        <button onClick={ changeColor }>Change Color</button><br />
-        <h2>{ count }</h2>
-        <h2 className={ isRed ? "red" : "" }>Some Text</h2>
-    </div>
+    return(
+        <Router>
+            <main>
+                <Nav />
+                <div className="container">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/post" element={<Post />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </div>
+            </main>
+        </Router>
   )
 }
+   
 
 export default App;
