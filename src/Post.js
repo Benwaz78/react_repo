@@ -2,12 +2,12 @@ import React from "react";
 import "./App.css";
 
 
-function Post(){
+function Post(props){
     return(
         <div className="post">
-            <h1>Post 1</h1>
+            <h1>{props.name}</h1>
             <p>
-                I love my paragraph here and always
+                {props.content}
             </p>
         </div>
     )
