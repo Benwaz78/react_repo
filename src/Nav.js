@@ -23,8 +23,8 @@ function Nav(){
                     </Link>
                 </li>
                 <li>
-                    <Link to="/contact">
-                        <button>Contact</button>
+                    <Link to="/product">
+                        <button>Product</button>
                     </Link>
                 </li>
             </ul>
