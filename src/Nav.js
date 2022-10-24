@@ -26,6 +26,13 @@ function Nav(){
                     <Link to="/product">
                         <button>Product</button>
                     </Link>
+                   
+                </li>
+                <li>
+                    <Link to="/product-single">
+                        <button>Product Data</button>
+                    </Link>
+                   
                 </li>
             </ul>
         </nav>
