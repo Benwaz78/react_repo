@@ -13,7 +13,7 @@ function ProductDetail(){
         const [ apiData, setDetailApiData ] = useState([]);
 
         const getDetailData = async ()=>{
-            const data = await fetch(`https://student-api.softwareacademy.ng/menu/${id}/`);
+            const data = await fetch(`https://student-api.softwareacademy.ng/detail/api/?id=${id}`);
             const convertData = await data.json();
             setDetailApiData(convertData);
             console.log(convertData);

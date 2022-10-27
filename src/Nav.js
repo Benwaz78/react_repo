@@ -29,8 +29,8 @@ function Nav(){
                    
                 </li>
                 <li>
-                    <Link to="/product-single">
-                        <button>Product Data</button>
+                    <Link to="/create-review">
+                        <button>Create Review</button>
                     </Link>
                    
                 </li>

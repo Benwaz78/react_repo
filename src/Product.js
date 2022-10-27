@@ -12,7 +12,7 @@ function Product(){
         const [ apiData, setApiData ] = useState([]);
 
         const getApiData = async ()=>{
-            const data = await fetch("https://student-api.softwareacademy.ng/menu/");
+            const data = await fetch("https://student-api.softwareacademy.ng/api/");
             const convertData = await data.json();
             setApiData(convertData);
             console.log(convertData);
