@@ -90,6 +90,53 @@ section{
 	width: 70%;
 }
 
+.form-group{
+	margin: 20px 0 20px 0;
+}
+
+.form-group > input,
+.form-group > textarea{
+	display: block;
+	padding: 10px;
+	width: 100%;
+	background-color: transparent;
+	border:1px solid #fff;
+}
+
+.form-group > input{
+	height: 45px;
+}
+
+.form-group > textarea{
+	height: 130px;
+}
+
+.btn-state,
+.loading-btn-state{
+	padding: 15px 12px;
+	color:#fff;
+	border-style: none;
+	border-radius: 10px;
+}
+
+.btn-state{
+	background-color: orange;
+	cursor: pointer;
+}
+
+.loading-btn-state{
+	background-color: rgb(247, 189, 81);
+}
+
+.alert-success{
+	background-color: rgb(56, 248, 38);
+	padding: 10px;
+	color:#fff;
+	width: 100%;
+	border-radius: 12px;
+}
+
+
 aside{
 	background: green;
 	padding: 10px;

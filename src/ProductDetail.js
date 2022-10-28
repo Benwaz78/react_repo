@@ -11,18 +11,21 @@ function ProductDetail(){
 
         const { id } = useParams();
         const [ apiData, setDetailApiData ] = useState([]);
+        const [ isPending, setPending] = useState(true);
 
         const getDetailData = async ()=>{
             const data = await fetch(`https://student-api.softwareacademy.ng/detail/api/?id=${id}`);
             const convertData = await data.json();
             setDetailApiData(convertData);
             console.log(convertData);
+            setPending(false);
         }
 
     return(
         <section>
             <div id="mainContent" className="home">
                     <div>
+                        {isPending && <div>Loading....</div>}
                         <h2>Data Here </h2>
                         <h2>{ apiData.menu_name }</h2>
                         <h2>{ apiData.prize }</h2>

@@ -10,12 +10,14 @@ function Product(){
 
 
         const [ apiData, setApiData ] = useState([]);
+        const [ isPending, setPending] = useState(true);
 
         const getApiData = async ()=>{
             const data = await fetch("https://student-api.softwareacademy.ng/api/");
             const convertData = await data.json();
             setApiData(convertData);
             console.log(convertData);
+            setPending(false);
             // console.log(convertData.results[0].name.title, convertData.results[0].name.first);
         }
 
@@ -43,7 +45,7 @@ function Product(){
                         )
                     )
                 }
-               
+               {isPending && <div>Loading....</div>}
               
             </div>
             <Aside />
